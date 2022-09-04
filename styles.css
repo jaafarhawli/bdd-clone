@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Hero*/
+.hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/slide2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.header > img {
+	width: 75px;
+	margin-top: 2vh;
+	margin-left: 6vw;
+}
+
+.nav-bar {
+	display: flex;
+	list-style-type: none;
+	font-size: 0.8rem;
+	color: white;
+	line-height: 1.5;
+	gap: 2vw;
+	padding-top: 2vh;
+	align-items: center;
+	font-family: sans-serif;
+	flex-shrink: 1;
+	margin-right: 6vw;
+}
+
+.nav-bar > button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0078be;
+	color: white;
+	border: none;
+	border-radius: 23px;
+	height: 45px;
+	width: 90px;
+}
+
+.hero > h1 {
+	font-size: clamp(30px, 3vw, 50px);
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'The Mix Black';
+	margin-top: 13vw;
+	text-align: center;
+	color: white;
+	width: 70vw;
+	text-transform: uppercase;
+	padding-bottom: 18.5vw;
+}
+/*Hero*/
+
+/*Foundations*/
+.foundations {
+	display: flex;
+	flex-direction: column;
+	background-color: #f1f1f1;
+	width: 100%;
+	min-height: 45vw;
+	height: fit-content;
+}
+
+.foundations > h1 {
+	font-family: 'The Mix Black';
+	line-height: 1.25;
+	color: #212121;
+	text-align: center;
+	font-size: 2vw;
+	padding-top: 2.5vw;
+	margin-bottom: 3vw;
+}
+
+.foundation-elements {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.element {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 17.5vw;
+	min-height: 33vw;
+	text-align: center;
+	border-radius: 6px;
+	height: fit-content;
+	padding-bottom: 2vw;
+}
+
+.element-img1 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 64%;
+	padding: 22px 5px 14px 5px;
+}
+
+.element-img2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	padding: 17px 5px 14px 5px;
+}
+
+.element-img3 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 36%;
+	padding: 14px 5px 14px 5px;
+}
+
+.element-img4 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 42%;
+	padding: 14px 5px 14px 5px;
+}
+
+.element-img5 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 56%;
+	padding: 14px 5px 14px 5px;
+}
+
+.element > h2 {
+	font-family: 'The Mix Black';
+	font-size: 1.3vw;
+	padding-bottom: 1vw;
+}
+
+.element > p {
+	font-family: 'The Mix Black';
+	font-size: 1.3vw;
+	align-items: center;
+	padding: 0 30px;
+	color: #646464;
+	height: 100%;
+}
+/*Foundations*/
+
+/*Explore*/
+.explore {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/parallax-4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.explore > h1 {
+	font-family: 'The Mix Black';
+	line-height: 1.25;
+	color: white;
+	text-align: center;
+	font-size: 2vw;
+	padding-top: 2.5vw;
+	margin-bottom: 3vw;
+}
+
+.explore > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-top: 4vw;
+	padding-bottom: 3vw;
+}
+/*Explore*/
