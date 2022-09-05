@@ -4,6 +4,20 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "The Mix Black";
+	src: url("./fonts/TheMixBlack-Caps.woff2");
+	src: url("./fonts/TheMixBlack-Caps.woff2") format("woff"), url("./fonts/TheMixBlack-Caps.woff2") format("opentype"),
+		url("./fonts/TheMixBlack-Caps.woff2") format("svg");
+}
+
+@font-face {
+	font-family: "The Mix Semibold";
+	src: url("./fonts/TheMixSemiBold-Plain.woff2");
+	src: url("./fonts/TheMixSemiBold-Plain.woff2") format("woff"),
+		url("./fonts/TheMixSemiBold-Plain.woff2") format("opentype"),
+		url("./fonts/TheMixSemiBold-Plain.woff2") format("svg");
+}
 /*Hero*/
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/slide2.jpg);
@@ -27,13 +41,13 @@
 .nav-bar {
 	display: flex;
 	list-style-type: none;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	color: white;
 	line-height: 1.5;
 	gap: 2vw;
 	padding-top: 2vh;
 	align-items: center;
-	font-family: sans-serif;
+	font-family: 'The Mix Semibold';
 	flex-shrink: 1;
 	margin-right: 6vw;
 }
@@ -45,6 +59,7 @@
 	background-color: #0078be;
 	color: white;
 	border: none;
+	font-family: 'The Mix Semibold';
 	border-radius: 23px;
 	height: 45px;
 	width: 90px;
@@ -144,7 +159,7 @@
 }
 
 .element > p {
-	font-family: 'The Mix Black';
+	font-family: 'The Mix Semibold';
 	font-size: 1.3vw;
 	align-items: center;
 	padding: 0 30px;
@@ -180,3 +195,206 @@
 	padding-bottom: 3vw;
 }
 /*Explore*/
+
+/*Join*/
+.join {
+	width: 100%;
+}
+
+.join > h1 {
+	font-family: 'The Mix Black';
+	line-height: 1.25;
+	color: black;
+	text-align: center;
+	font-size: 2vw;
+	padding-top: 2.5vw;
+	margin-bottom: 3vw;
+}
+
+.join-elements {
+	display: flex;
+	width: 100%;
+	gap: 1vw;
+	height: 44vw;
+}
+
+.join-elements > img {
+	display: block;
+	width: 32vw;
+	height: 27vw;
+	padding-right: 1vw;
+}
+
+.box {
+	background: url(./images/bg-icon.png);
+	width: 15vw;
+	align-items: center;
+	margin-left: 0.6vw;
+	border-radius: 8px;
+	height: 40vw;
+}
+
+.box > h2 {
+	font-size: 22px;
+	font-family: 'The Mix Black';
+	padding-left: 3vw;
+	padding-top: 3vw;
+	padding-right: 3vw;
+	padding-bottom: 1vw;
+}
+
+.box > ul {
+	font-size: 16px;
+	padding: 0 4vw;
+	font-family: 'The Mix Semibold';
+	color: #646464;
+}
+
+.box > button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'The Mix Semibold';
+	background-color: #0078be;
+	color: white;
+	border: none;
+	border-radius: 25px;
+	font-size: 15px;
+	height: 45px;
+	width: 145px;
+	margin-left: 4vw;
+	margin-top: 3vw;
+}
+
+.join > p {
+	float: right;
+	font-size: 16px;
+	font-family: 'The Mix Black';
+	margin-top: 0.6vw;
+	color: #646464;
+	margin-bottom: 0.6vw;
+}
+
+.store {
+	display: flex;
+	justify-content: end;
+	width: 100%;
+	padding-bottom: 3vw;
+}
+
+.store > img {
+	width: 9.5vw;
+	padding-right: 1vw;
+}
+/*Join*/
+
+/*Hub*/
+.hub {
+	background: url(./images/parallax-light.jpg);
+	width: 100%;
+}
+
+.hub > h1 {
+	font-family: 'The Mix Black';
+	line-height: 1.25;
+	color: #212121;
+	text-align: center;
+	font-size: 2vw;
+	padding-top: 2.5vw;
+	margin-bottom: 3vw;
+}
+
+.hub-elements {
+	display: flex;
+	gap: 7vw;
+	justify-content: center;
+	width: 100%;
+	height: 20vw;
+}
+
+.hub-elements-pack {
+	width: 12vw;
+	text-align: center;
+	font-family: 'The Mix Black';
+}
+
+.hub-elements-pack > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.hub-elements-pack > h2 {
+	font-size: 33px;
+}
+
+.hub-elements-pack > p {
+	color: #333;
+}
+/*Hub*/
+
+/*Trending*/
+.trending {
+	background: linear-gradient(rgba(205, 205, 205, 0.5), rgba(206, 206, 206, 0.5)), url("./images/bg-icon-empty.png");
+	width: 100%;
+	height: 45vw;
+}
+
+.trending > h1 {
+	font-family: 'The Mix Black';
+	line-height: 1.25;
+	color: #212121;
+	text-align: center;
+	font-size: 2vw;
+	padding-top: 2.5vw;
+	margin-bottom: 3vw;
+}
+
+.trending-items {
+	display: flex;
+	gap: 2vw;
+	justify-content: center;
+	width: 100%;
+	height: 25vw;
+}
+
+.trending-pack {
+	width: 22vw;
+	background-color: white;
+	height: 30vw;
+}
+
+.trending-pack > img {
+	width: 100%;
+}
+
+.trending-pack > h2 {
+	font-family: 'The Mix Black';
+	font-size: 20px;
+	padding: 2vw 1.3vw;
+}
+
+.trending-pack > p {
+	position: relative;
+	bottom: 20px;
+	font-size: 15px;
+	font-family: 'The Mix Semibold';
+	padding: 0 1.3vw;
+}
+
+.trending > button {
+	display: block;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	font-family: 'The Mix Semibold';
+	background-color: #0078be;
+	color: white;
+	border: none;
+	border-radius: 25px;
+	font-size: 15px;
+	height: 45px;
+	width: 180px;
+}
+/*Trending*/
