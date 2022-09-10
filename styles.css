@@ -18,6 +18,11 @@
 		url("./fonts/TheMixSemiBold-Plain.woff2") format("opentype"),
 		url("./fonts/TheMixSemiBold-Plain.woff2") format("svg");
 }
+
+body {
+	font-family: 'The Mix Black';
+}
+
 /*Hero*/
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/slide2.jpg);
@@ -30,6 +35,8 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	position: fixed;
+	top: 0;
 }
 
 .header > img {
@@ -59,7 +66,6 @@
 	background-color: #0078be;
 	color: white;
 	border: none;
-	font-family: 'The Mix Semibold';
 	border-radius: 23px;
 	height: 45px;
 	width: 90px;
@@ -67,10 +73,8 @@
 
 .hero > h1 {
 	font-size: clamp(30px, 3vw, 50px);
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'The Mix Black';
-	margin-top: 13vw;
+	margin: 0 auto;
+	padding-top: 22vw;
 	text-align: center;
 	color: white;
 	width: 70vw;
@@ -85,12 +89,10 @@
 	flex-direction: column;
 	background-color: #f1f1f1;
 	width: 100%;
-	min-height: 45vw;
 	height: fit-content;
 }
 
 .foundations > h1 {
-	font-family: 'The Mix Black';
 	line-height: 1.25;
 	color: #212121;
 	text-align: center;
@@ -101,8 +103,9 @@
 
 .foundation-elements {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	width: 100%;
+	padding-bottom: 60px;
 }
 
 .element {
@@ -110,61 +113,77 @@
 	flex-direction: column;
 	background-color: white;
 	width: 17.5vw;
-	min-height: 33vw;
 	text-align: center;
 	border-radius: 6px;
-	height: fit-content;
 	padding-bottom: 2vw;
+	margin: 0 10px;
+	box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 6%);
+}
+
+.element:nth-child(1):hover {
+	background-color: rgba(0, 120, 190, .1);
+}
+
+.element:nth-child(2):hover {
+	background-color: rgba(0, 148, 158, .1);
+}
+
+.element:nth-child(3):hover {
+	background-color: rgba(0, 128, 45, .1);
+}
+
+.element:nth-child(4):hover {
+	background-color: rgba(161, 183, 0, .1);
+}
+
+.element:nth-child(5):hover {
+	background-color: rgba(255, 56, 112, .1);
+}
+
+.element-img1,
+.element-img2,
+.element-img3,
+.element-img4,
+.element-img5 {
+	margin: 0 auto;
 }
 
 .element-img1 {
-	margin-left: auto;
-	margin-right: auto;
 	width: 64%;
 	padding: 22px 5px 14px 5px;
 }
 
 .element-img2 {
-	margin-left: auto;
-	margin-right: auto;
 	width: 45%;
 	padding: 17px 5px 14px 5px;
 }
 
 .element-img3 {
-	margin-left: auto;
-	margin-right: auto;
 	width: 36%;
 	padding: 14px 5px 14px 5px;
 }
 
 .element-img4 {
-	margin-left: auto;
-	margin-right: auto;
 	width: 42%;
 	padding: 14px 5px 14px 5px;
 }
 
 .element-img5 {
-	margin-left: auto;
-	margin-right: auto;
 	width: 56%;
 	padding: 14px 5px 14px 5px;
 }
 
 .element > h2 {
-	font-family: 'The Mix Black';
 	font-size: 1.3vw;
 	padding-bottom: 1vw;
 }
 
 .element > p {
 	font-family: 'The Mix Semibold';
-	font-size: 1.3vw;
+	font-size: 15px;
 	align-items: center;
 	padding: 0 30px;
 	color: #646464;
-	height: 100%;
 }
 /*Foundations*/
 
@@ -173,11 +192,11 @@
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/parallax-4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	width: 100%;
 }
 
 .explore > h1 {
-	font-family: 'The Mix Black';
 	line-height: 1.25;
 	color: white;
 	text-align: center;
@@ -188,8 +207,7 @@
 
 .explore > img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 50%;
 	padding-top: 4vw;
 	padding-bottom: 3vw;
@@ -202,7 +220,6 @@
 }
 
 .join > h1 {
-	font-family: 'The Mix Black';
 	line-height: 1.25;
 	color: black;
 	text-align: center;
@@ -214,8 +231,6 @@
 .join-elements {
 	display: flex;
 	width: 100%;
-	gap: 1vw;
-	height: 44vw;
 }
 
 .join-elements > img {
@@ -226,21 +241,18 @@
 }
 
 .box {
+	display: flex;
+	flex-direction: column;
 	background: url(./images/bg-icon.png);
 	width: 15vw;
 	align-items: center;
-	margin-left: 0.6vw;
+	margin-left: 1.6vw;
 	border-radius: 8px;
-	height: 40vw;
 }
 
 .box > h2 {
 	font-size: 22px;
-	font-family: 'The Mix Black';
-	padding-left: 3vw;
-	padding-top: 3vw;
-	padding-right: 3vw;
-	padding-bottom: 1vw;
+	padding: 3vw 3vw 1vw;
 }
 
 .box > ul {
@@ -251,7 +263,7 @@
 }
 
 .box > button {
-	display: flex;
+	display: inline-block;
 	align-items: center;
 	justify-content: center;
 	font-family: 'The Mix Semibold';
@@ -262,14 +274,12 @@
 	font-size: 15px;
 	height: 45px;
 	width: 145px;
-	margin-left: 4vw;
-	margin-top: 3vw;
+	margin: 3vw 0 3vw 4vw;
 }
 
 .join > p {
 	float: right;
 	font-size: 16px;
-	font-family: 'The Mix Black';
 	margin-top: 0.6vw;
 	color: #646464;
 	margin-bottom: 0.6vw;
@@ -291,11 +301,11 @@
 /*Hub*/
 .hub {
 	background: url(./images/parallax-light.jpg);
+	background-attachment: fixed;
 	width: 100%;
 }
 
 .hub > h1 {
-	font-family: 'The Mix Black';
 	line-height: 1.25;
 	color: #212121;
 	text-align: center;
@@ -309,19 +319,17 @@
 	gap: 7vw;
 	justify-content: center;
 	width: 100%;
-	height: 20vw;
 }
 
 .hub-elements-pack {
 	width: 12vw;
 	text-align: center;
-	font-family: 'The Mix Black';
+	margin: 0 10px;
 }
 
 .hub-elements-pack > img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	width: 50%;
 }
 
@@ -338,11 +346,15 @@
 .trending {
 	background: linear-gradient(rgba(205, 205, 205, 0.5), rgba(206, 206, 206, 0.5)), url("./images/bg-icon-empty.png");
 	width: 100%;
-	height: 45vw;
+}
+
+.trending::after {
+	display: table;
+	content: '';
+	clear: both;
 }
 
 .trending > h1 {
-	font-family: 'The Mix Black';
 	line-height: 1.25;
 	color: #212121;
 	text-align: center;
@@ -356,13 +368,11 @@
 	gap: 2vw;
 	justify-content: center;
 	width: 100%;
-	height: 25vw;
 }
 
 .trending-pack {
 	width: 22vw;
 	background-color: white;
-	height: 30vw;
 }
 
 .trending-pack > img {
@@ -370,7 +380,6 @@
 }
 
 .trending-pack > h2 {
-	font-family: 'The Mix Black';
 	font-size: 20px;
 	padding: 2vw 1.3vw;
 }
@@ -385,9 +394,7 @@
 
 .trending > button {
 	display: block;
-	position: relative;
-	top: 100px;
-	margin: 0 auto;
+	margin: 20px auto;
 	font-family: 'The Mix Semibold';
 	background-color: #0078be;
 	color: white;
@@ -402,9 +409,10 @@
 /*Academy*/
 .academy {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/parallax-7.jpg);
+	background-attachment: fixed;
 	width: 100%;
-	height: 24vw;
-	padding-top: 3vw;
+	padding: 3vw 0 2vw;
+	font-family: 'The Mix Black';
 }
 
 .academy-elements {
@@ -443,13 +451,11 @@
 
 .academy-pack > h1 {
 	font-size: 18px;
-	font-family: 'The Mix Black';
 	color: white;
 }
 
 .academy > button {
 	display: block;
-	margin: 0 auto;
 	font-family: 'The Mix Semibold';
 	background-color: #0078be;
 	color: white;
@@ -458,7 +464,7 @@
 	font-size: 15px;
 	height: 45px;
 	width: 300px;
-	margin-top: 2vw;
+	margin: 2vw auto;
 	text-transform: uppercase;
 }
 /*Academy*/
@@ -467,7 +473,6 @@
 .words {
 	background: url(./images/bg-icon-reverse.png);
 	width: 100%;
-	height: 23vw;
 }
 
 .words-elements {
@@ -475,11 +480,10 @@
 	justify-content: center;
 	width: 100%;
 	gap: 3vw;
-	padding-top: 4vw;
+	padding: 4vw 0;
 }
 
 .words-elements > h1 {
-	font-family: 'The Mix Black';
 	line-height: 1.25;
 	color: #212121;
 	font-size: 2vw;
@@ -488,27 +492,25 @@
 	width: 20vw;
 }
 .words-pack {
-	display: block;
-	width: 21vw;
-	height: 12vw;
+	display: flex;
+	width: 24vw;
 	border: 1px rgb(207, 207, 207) solid;
 	border-radius: 7px;
 }
 
 .words-pack > img {
-	display: block;
+	display: flex;
 	width: 8vw;
 	height: 8vw;
 	padding-left: 2vw;
 	padding-top: 2vw;
+	margin-bottom: 20px;
 }
 
 .words-pack > h2 {
-	font-family: 'The Mix Black';
 	font-size: 20px;
-	padding-left: 2vw;
-	padding-top: 1vw;
-	padding-bottom: 2vw;
+	padding: 1vw 20px 2vw 2vw;
+	overflow: hidden;
 }
 /*Words*/
 
@@ -516,35 +518,31 @@
 .footer {
 	background-color: #212121;
 	width: 100%;
-	height: 33vw;
 }
 
 .footer-elements {
 	display: flex;
 	gap: 3vw;
-	padding-top: 3vw;
-	margin-left: 15vw;
+	padding: 3vw 0 6vw 15vw;
 }
 
-.fe-1 {
+.footer-element-1 {
 	width: 15vw;
 }
 
-.fe-1 > h2 {
+.footer-element-1 > h2 {
 	font-size: 20px;
-	font-family: 'The Mix Black';
 	color: #9e9e9e;
 	padding-bottom: 1vw;
 }
 
-.fe-1 > h3 {
+.footer-element-1 > h3 {
 	font-size: 18px;
-	font-family: 'The Mix Black';
 	color: #494949;
 	padding-bottom: 1vw;
 }
 
-.fe-1 > ul {
+.footer-element-1 > ul {
 	color: white;
 	font-family: 'The Mix Semibold';
 	font-size: 17px;
@@ -552,19 +550,18 @@
 	padding-left: 1.5vw;
 }
 
-.fe-2 {
+.footer-element-2 {
 	width: 19vw;
 	padding-top: 3vw;
 }
 
-.fe-2 > h3 {
+.footer-element-2 > h3 {
 	font-size: 18px;
-	font-family: 'The Mix Black';
 	color: #494949;
 	padding-bottom: 1vw;
 }
 
-.fe-2 > ul {
+.footer-element-2 > ul {
 	color: white;
 	font-family: 'The Mix Semibold';
 	font-size: 17px;
